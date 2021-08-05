@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('../../includes/head.html', {path: '../..'})
+  </head>
+  <body class="">
+    @@include('../../includes/header.html')
+    <div class="root">
+        @@include('../../includes/navbar.html', {path: '../..'})
+        <main id="mainContent" role="main" class="main">
+          <div class="article-wrapper">
+            <article class="article doc">
+                <div class="sect">
+                    <h1 id="N0">API申请</h1>
+                    <div class="sect-body">开发人员及管理员可点击顶部的“API市场”，进入后，可通过单击API名称，进行API详情查看，并通过右边的“数据预览”服务在线测试API是否符合需求，随后点击“申请”进行API申请。</div>
+                </div>
+                <div class="sect">
+                    <h2 id="N1">API详情查看</h2>
+                    <div class="sect-body"></div>
+                </div>
+                <div class="sect">
+                  <h2 id="N2">API数据预览</h2>
+                  <div class="sect-body"></div>
+                </div>
+                <div class="sect">
+                  <h2 id="N3">API申请</h2>
+                  <div class="sect-body"></div>
+                </div>
+            </article>
+            @@include('../../includes/anctorList.html')
+          </div>
+        </main>
+    </div>
+    <script src="../../js/includes/bodyScript.js"></script>
+  </body>
+</html>

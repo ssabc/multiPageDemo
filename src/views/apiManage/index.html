@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('../../includes/head.html', {path: '../..'})
+  </head>
+  <body class="">
+    @@include('../../includes/header.html')
+    <div class="root">
+        @@include('../../includes/navbar.html', {path: '../..'})
+        <main id="mainContent" role="main" class="main">
+          <div class="article-wrapper">
+            <article class="article doc">
+                <div class="sect">
+                    <h1 id="N0">API管理</h1>
+                    <div class="sect-body">用户可进入顶部的「API管理」菜单，点击左侧的「API管理-API」查看当前所有的API，包括生成API、注册API、服务编排。。</div>
+                </div>
+                <div class="sect">
+                    <h2 id="N1">API提交与发布</h2>
+                    <div class="sect-body"></div>
+                </div>
+                <div class="sect">
+                  <h2 id="N2">查看API</h2>
+                  <div class="sect-body"></div>
+                </div>
+            </article>
+            @@include('../../includes/anctorList.html')
+          </div>
+        </main>
+    </div>
+    <script src="../../js/includes/bodyScript.js"></script>
+  </body>
+</html>

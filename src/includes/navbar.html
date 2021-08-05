@@ -1,0 +1,36 @@
+
+<nav id="sidr" class="nav" data-component="api" data-is-home=""
+    data-is-site-aspect="" data-version="" role="navigation">
+    <div id="backHome" class="back-home">返回首页</div>
+    <div class="nav-component-active">
+        <div class="flex justify-justified nav-heading">
+            <span class="">数据服务</span>
+        </div>
+        <div id="nav-list"></div>
+    </div>
+</nav>
+<script>
+    layui.use('tree', function(){
+        var tree = layui.tree;
+        tree.render({
+            elem: '#nav-list',  //绑定元素
+            accordion: true,
+            showLine: false,
+            data: MENULIST,
+            click: function(obj){
+                if ( obj.data.href) {
+                    const href = window.location.href
+                    let startIdx = href.lastIndexOf("views/")
+                    if (startIdx > -1) {
+                        window.location.href = href.substring(0, startIdx + 6) + obj.data.href + ".html"
+                    }
+                }
+            }
+        });
+
+        // const crrDom = $(".layui-tree-checkedFirst")
+        // let scrollTop = crrDom ? crrDom.offset().top : 0
+        // $("#sidr").animate({scrollTop: scrollTop }, {duration: 500, easing: "swing"});
+        
+    })
+</script>

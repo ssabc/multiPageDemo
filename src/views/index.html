@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('../includes/head.html', {path: '..'})
+    <link rel="stylesheet" href="../css/views/index.css">
+    <script>
+      /**
+     * body 上的 onhashchange 能监听url锚点变化
+     * 获取浏览器中锚点值 ：#xxx
+    */
+    function getHash(){
+        var hash = window.location.hash;
+        console.log(hash)
+    }
+    </script>
+  </head>
+  <body οnhashchange="getHash">
+    @@include('../includes/header.html')
+    <div class="root">
+        @@include('../includes/navbar.html', {path: '..'})
+        <main id="mainContent" role="main" class="main">
+          <div class="article-wrapper">
+            <article class="article doc">
+              <div class="sect">
+                  <h1 id="N0">概述</h1>
+                  <div class="sect-body"></div>
+              </div>
+                <div class="sect">
+                    <h2 id="N1">产品介绍</h2>
+                    <div class="sect-body"></div>
+                </div>
+                <div class="sect">
+                  <h2 id="N2">功能架构</h2>
+                  <div class="sect-body"></div>
+                </div>
+                <div class="sect">
+                  <h2 id="N3">主要特性</h2>
+                  <div class="sect-body"></div>
+                </div>
+              </article>
+              @@include('../includes/anctorList.html')
+          </div>
+        </main>
+    </div>
+  <script src="../js/includes/bodyScript.js"></script></body>
+</html>

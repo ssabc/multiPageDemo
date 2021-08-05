@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('../../includes/head.html', {path: '../..'})
+  </head>
+  <body class="">
+    @@include('../../includes/header.html')
+    <div class="root">
+        @@include('../../includes/navbar.html', {path: '../..'})
+        <main id="mainContent" role="main" class="main">
+          <div class="article-wrapper">
+            <article class="article doc">
+                <div class="sect">
+                    <h1 id="N0">类目管理</h1>
+                    <div class="sect-body">用户可进入顶部的「API管理」菜单，点击左侧的「API管理-API/函数」,对当前API/函数分类结构进行管理和修改。</div>
+                </div>
+            </article>
+            @@include('../../includes/anctorList.html')
+          </div>
+        </main>
+    </div>
+    <script src="../../js/includes/bodyScript.js"></script>
+  </body>
+</html>

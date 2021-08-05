@@ -1,0 +1,108 @@
+.toc-sidebar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    position: sticky;
+    top: 2vh;
+    max-height: 80vh;
+    overflow-y: auto;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+    font-size: 0.8em;
+    margin-right: 3rem;
+    opacity: 0.8; 
+}
+  
+  .toc-menu {
+    border-width: 0 0 0 0.25rem;
+    margin-bottom: 1.5rem; }
+  
+  .toc-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; }
+  
+  .toc-menu .subheading-list {
+    margin-left: 0.5em; }
+  
+  .toc-title {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: var(--heading);
+    color: var(--aluminum-5);
+    letter-spacing: 0.05em;
+    text-transform: uppercase; }
+  
+  .toc .toc-menu li {
+    margin: 0.5rem 0 0;
+    padding-top: var(--xs);
+    padding-bottom: var(--xs);
+    padding-right: var(--sm);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: var(--sans-serif);
+    font-weight: var(--weight-bold);
+    font-size: var(--md); }
+  
+  .toc .toc-menu li.subheading-item {
+    font-weight: var(--weight-normal);
+    margin: 0.25rem 0 0; }
+  
+  .toc a {
+    color: inherit;
+    text-decoration: none; }
+  
+  .toc a:hover {
+    color: var(--core-violet-2); }
+  
+  .toc .toc-menu li a.toc-active {
+    color: var(--core-violet-4); }
+  
+  @media (max-width: 1370px) {
+    .toc {
+      display: none; } }
+  
+
+  .article-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  
+  .article-navigation div {
+    display: block;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-weight: var(--weight-bold);
+    color: var(--core-violet-4);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem; }
+  
+  .article-navigation div a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: var(--md); }
+  
+  .article-navigation div.btn-next {
+    text-align: right; }
+  
+  .article-banner {
+    background-color: var(--aluminum-2);
+    border: solid 1px var(--aluminum-4);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 0 -10px; }
+  
+  @media (max-width: 1000px) {
+    .article {
+      margin-left: var(--lg);
+      margin-right: var(--lg); }
+    .article-navigation {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .article-navigation div.btn-next, .article-navigation div.btn-previous {
+      text-align: center; } }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('../../../includes/head.html', {path: '../../..'})
+  </head>
+  <body class="">
+    @@include('../../../includes/header.html')
+    <div class="root">
+        @@include('../../../includes/navbar.html', {path: '../../..'})
+        <main id="mainContent" role="main" class="main">
+          <div class="article-wrapper">
+            <article class="article doc">
+                <div class="sect">
+                    <h1 id="N0">基本属性配置</h1>
+                    <div class="sect-body">填写基本属性。包含API分组、名称、路径、请求方式、请求协议、返回类型等信息。</div>
+                </div>
+                <div class="sect">
+                    <h2 id="N1">基本信息</h2>
+                    <div class="sect-body"></div>
+                </div>
+                <div class="sect">
+                  <h2 id="N2">API参数</h2>
+                  <div class="sect-body"></div>
+                </div>
+                <div class="sect">
+                    <h2 id="N3">安全与限制策略</h2>
+                    <div class="sect-body"></div>
+                  </div>
+            </article>
+            @@include('../../../includes/anctorList.html')
+          </div>
+        </main>
+    </div>
+    <script src="../../../js/includes/bodyScript.js"></script>
+  </body>
+</html>

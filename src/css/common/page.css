@@ -1,0 +1,22 @@
+.head {
+    background: #000;
+    color: #7a849c;
+    padding: 0 30px;
+    height: 66px;
+    line-height: 66px;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+    color: #fff;
+  }
+
+  .root {
+      padding-top: 66px;
+  }
+
+  .layui-tree-entry {
+      height: 40px;
+  }
